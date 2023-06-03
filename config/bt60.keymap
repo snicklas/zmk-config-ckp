@@ -24,7 +24,7 @@
                  &kp LCTRL  &kp LGUI  &kp LALT  &kp SPACE  &kp RALT   &mo 1   &mo 2  &kp RCTRL
             >;
 
-            sensor-bindings;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         raise {
@@ -36,7 +36,7 @@
               &trans    &trans     &trans  &trans  &trans  &trans   &mo 3   &trans
             >;
 
-            sensor-bindings;
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         super {
@@ -47,6 +47,8 @@
 &trans  &trans     &trans  &trans  &trans  &trans  &trans      &trans    &trans      &trans      &trans        &trans        &trans
         &trans     &trans  &trans  &trans  &trans  &trans      &trans    &trans
             >;
+            
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
 
         lower {
@@ -57,6 +59,8 @@
     &trans        &trans        &trans        &trans        &trans        &trans     &trans  &trans  &trans  &trans  &trans  &trans  &trans
                   &trans        &trans        &trans        &trans        &trans  &kp K_APP  &trans  &trans
             >;
+            
+            sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN>;
         };
     };
 };
